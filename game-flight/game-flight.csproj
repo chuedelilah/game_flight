@@ -1,0 +1,181 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{00FA35A5-F37C-4BF8-95A1-D27FCF8E03F5}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>game_flight</RootNamespace>
+    <AssemblyName>game-flight</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="boom.cs" />
+    <Compile Include="cloud.cs" />
+    <Compile Include="enemy.cs" />
+    <Compile Include="enemy_boom.cs" />
+    <Compile Include="Flight_Menu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Flight_Menu.Designer.cs">
+      <DependentUpon>Flight_Menu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="See_Charts.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="See_Charts.Designer.cs">
+      <DependentUpon>See_Charts.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Write_Flight_Score.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Write_Flight_Score.Designer.cs">
+      <DependentUpon>Write_Flight_Score.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="user.cs" />
+    <Compile Include="GameForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GameForm.Designer.cs">
+      <DependentUpon>GameForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Flight_Menu.resx">
+      <DependentUpon>Flight_Menu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GameForm.resx">
+      <DependentUpon>GameForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="See_Charts.resx">
+      <DependentUpon>See_Charts.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Write_Flight_Score.resx">
+      <DependentUpon>Write_Flight_Score.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\flight.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\boom.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\flight.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\flight_2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\explosion.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\LASER.WAV" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\sea.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\boom_2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\g1.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\g2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Flight.xml" />
+    <None Include="Properties\g5.jpg" />
+    <None Include="Properties\g4.gif" />
+    <None Include="Properties\g3.gif" />
+    <None Include="Properties\YMCA.wav" />
+    <None Include="Properties\YMCA.wma" />
+    <None Include="Properties\YMCA.mp3.mp3" />
+    <None Include="Properties\cloud2.png" />
+    <None Include="Properties\cloud.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="AxWMPLib">
+      <Guid>{6BF52A50-394A-11D3-B153-00C04F79FAA6}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>aximp</WrapperTool>
+      <Isolated>False</Isolated>
+    </COMReference>
+    <COMReference Include="WMPLib">
+      <Guid>{6BF52A50-394A-11D3-B153-00C04F79FAA6}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

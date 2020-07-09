@@ -1,0 +1,10 @@
+C:\Users\Liupoing\Documents\Visual Studio 2012\Projects\game-flight\game-flight\bin\Debug\game-flight.exe.config
+C:\Users\TZUCHI_USER\Downloads\game-flight\game-flight\game-flight\bin\Debug\game-flight.exe.config
+C:\Users\TZUCHI_USER\Downloads\game-flight\game-flight\game-flight\bin\Debug\game-flight.exe
+C:\Users\TZUCHI_USER\Downloads\game-flight\game-flight\game-flight\bin\Debug\game-flight.pdb
+C:\Users\TZUCHI_USER\Downloads\game-flight\game-flight\game-flight\obj\Debug\game-flight.csprojResolveAssemblyReference.cache
+C:\Users\TZUCHI_USER\Downloads\game-flight\game-flight\game-flight\obj\Debug\game_flight.Form1.resources
+C:\Users\TZUCHI_USER\Downloads\game-flight\game-flight\game-flight\obj\Debug\game_flight.Properties.Resources.resources
+C:\Users\TZUCHI_USER\Downloads\game-flight\game-flight\game-flight\obj\Debug\game-flight.csproj.GenerateResource.Cache
+C:\Users\TZUCHI_USER\Downloads\game-flight\game-flight\game-flight\obj\Debug\game-flight.exe
+C:\Users\TZUCHI_USER\Downloads\game-flight\game-flight\game-flight\obj\Debug\game-flight.pdb
