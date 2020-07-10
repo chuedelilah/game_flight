@@ -6,4 +6,4 @@ C# 射擊飛機遊戲 (合作專案)
 
 ![image](https://github.com/chuedelilah/game_flight/tree/master/image_forReadme/i1.png)
 
-![image](https://github.com/chuedelilah/game_flight/tree/master/image_forReadme/i2.png)
+![image](https://github.com/chuedelilah/game_flight/tree/master/image_forReadme/i2.jpg)
